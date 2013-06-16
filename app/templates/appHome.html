@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="{{STATIC_URL}}css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <!-- here are a couple of different bootstrap alert boxes, the actions
+         of the buttons will be bound in app.js, but the markup syntax is 
+         the same as usual. I've added a couple more classes to distiguish
+         the boxes, in case you were to have more than one type on each page.
+        
+         TODO: using the class to distiguish boxes is not optimal. It would 
+         be better to use jQuery to apply the close action to the parent element
+         of the close button, or use ID attributes.
+    -->
+    <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert-warning">&times;</button>
+        <strong>Warning!</strong> Best check yo self, you're not looking too good.
+    </div>
+
+    <div class="alert alert-error">
+        <button type="button" class="close" data-dismiss="alert-error">&times;</button>
+        <strong>Error!</strong> Oh snap! Change a few things up and try submitting again.
+    </div>
+
+</body>
+
+<!--loading scripts at the end to improve performance-->
+<script data-main="/static/js/app.js" src="/static/js/lib/require.js"></script>
+
+</html>
